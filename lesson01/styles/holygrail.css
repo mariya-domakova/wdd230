@@ -12,6 +12,7 @@
 header {
     background: lightpink;
     padding: 2rem;
+    grid-column: 1 / 3;
 }
   
 nav {
