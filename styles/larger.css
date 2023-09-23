@@ -1,0 +1,21 @@
+@media (min-width: 927px) {
+    header {
+        background: rgb(9,35,42);
+        background: linear-gradient(9deg, rgba(9,35,42,1) 0%, rgba(29,95,135,1) 57%, rgba(188,250,252,1) 100%);
+        font-size: 1.5rem;
+    }
+	nav ul {
+		display: flex;
+        padding: 0 9rem;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+    main {
+        grid-template-columns: 1fr .5fr;
+    }
+    h2 {
+        grid-column: 1/3;
+    }
+}
+
