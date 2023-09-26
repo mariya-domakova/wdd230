@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,800;1,200&display=swap');
 
 :root {
-    --primary-color: #131b23;
-    --secondary-color: #e9f1f7;
-    --accent-color-1: #2d5c7b;
-    --accent-color-2: #c0d3d8;
-    --accent-color-3: #202b36;
+    --primary-color: #414250;
+    --secondary-color: #dce7ed;
+    --accent-color-1: #5a7587;
+    --accent-color-2: #fff;
 }
 
 * {
@@ -14,8 +13,7 @@
 }
 
 body {
-    background: rgb(164,199,208);
-    background: linear-gradient(9deg, rgba(164,199,208,1) 0%, rgba(192,211,216,1) 52%, rgba(244,244,244,1) 100%);
+    background-color: var(--secondary-color);
     color: var(--primary-color);
     font-family: Poppins, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -25,25 +23,25 @@ body {
 }
 
 header {
-    background-color: var(--accent-color-1);
-    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--accent-color-2);
     font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: .7rem;
 }
 
 header img {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
 nav ul {
-    background-color: var(--primary-color);
+    background-color: var(--accent-color-1);
     list-style: none;
     font-size: 1.2rem;
     font-weight: normal;
@@ -54,16 +52,16 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: var(--accent-color-3);
+    background-color: #4b6573;
 }
 
 nav ul li a {
     text-decoration: none; 
-    color: var(--secondary-color);
+    color: var(--accent-color-2);
 }
 
 main {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 2rem auto;
     padding: 2rem;
     display: grid;
@@ -77,12 +75,12 @@ h2 {
 }
 
 .card {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color-2);
 }
 
 .card h3 {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--accent-color-2);
     padding: 10px 0 10px 0;
     margin-top: 0;
     font-size: 1.5rem;
@@ -101,7 +99,7 @@ h2 {
 }
 
 .card ul li:hover {
-    background-color: var(--accent-color-2);
+    background-color: var(--secondary-color);
 }
 
 .card ul li a {
@@ -110,7 +108,7 @@ h2 {
 }
 
 .card ul li a:hover {
-    color: var(--accent-color-3); 
+    color: var(--accent-color-1); 
 }
 
 #information {
@@ -123,7 +121,7 @@ h2 {
 
 footer {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--accent-color-2);
     padding: 3rem 0;
     font-weight: 200;
 }
@@ -139,8 +137,6 @@ footer img {
 }
 
 #lastModified {
-    color: var(--accent-color-2);
     font-size: 1rem;
-    font-style: italic;
     padding-top: 1rem;
 }
