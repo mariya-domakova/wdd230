@@ -95,6 +95,7 @@ h2 {
     text-align: left;
     padding: .5rem 0;
     padding-left: 30px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -117,6 +118,7 @@ h2 {
 
 #information p {
     padding: .5rem 0;
+    font-size: 1.2rem;
 }
 
 footer {
