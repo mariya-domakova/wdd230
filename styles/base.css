@@ -20,6 +20,7 @@ body {
     margin: auto;
     padding: 0;
     text-align: center;
+    min-width: 380px;
 }
 
 header {
@@ -29,26 +30,39 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin: 0 auto;
-    padding: .7rem;
+    padding: 15px 2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0.67em 20px;
 }
 
 header img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    margin-left: 20px;
+}
+
+nav {
+    background-color: var(--accent-color-1);
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
-    background-color: var(--accent-color-1);
     list-style: none;
     font-size: 1.2rem;
     font-weight: normal;
+    width: 1000px;
+    padding: 15px 2rem;
 }
 
 nav ul li {
-    padding: 1.3rem 0;
+    padding: .5rem 0;
 }
 
 nav ul li:hover {
@@ -61,8 +75,8 @@ nav ul li a {
 }
 
 main {
-    max-width: 1200px;
-    margin: 2rem auto;
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -72,6 +86,7 @@ main {
 h2 {
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 1rem;
+    font-size: 1.7rem;
 }
 
 .card {
@@ -125,6 +140,7 @@ footer {
     background-color: var(--primary-color);
     color: var(--accent-color-2);
     padding: 3rem 0;
+    font-size: 1rem;
     font-weight: 200;
 }
 
@@ -139,6 +155,6 @@ footer img {
 }
 
 #lastModified {
-    font-size: 1rem;
-    padding-top: 1rem;
+    font-size: .8rem;
+    padding-top: .8rem;
 }
