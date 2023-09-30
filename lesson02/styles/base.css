@@ -104,12 +104,11 @@ main h2 {
     font-size: 1.3rem;
 }
 
-#information {
+.information {
     margin: 15px;
 }
 
-#information a {
-    /* text-decoration: none; */
+.information a {
     color: var(--primary-color);
     font-size: 1rem;
 }
