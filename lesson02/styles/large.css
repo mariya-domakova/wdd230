@@ -1,0 +1,33 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 1024px) {
+    nav ul {
+		display: flex;
+        width: 750px;
+	}
+
+	nav ul li {
+		flex: 1 1 100%;
+        padding: 1.3rem 0;
+	}
+
+    main {
+		grid-template-columns: 1fr 1fr 1fr;
+        margin: 1.5rem auto;
+	}
+
+    main h2 {
+        grid-column: 1/4;
+    }
+
+    main section:last-child {
+        grid-column: 3 / 4;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+
+    #lastModified {
+        font-size: 1rem;
+    }
+}
