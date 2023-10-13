@@ -2,7 +2,7 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-button.addEventListener('click', () => {
+const addItem = () => {
 	if (input.value != '') {
 		const li = document.createElement('li');
 		const deleteButton = document.createElement('button');
@@ -16,6 +16,18 @@ button.addEventListener('click', () => {
 		})
 		input.value = '';
 	} else {
+        alert('Please enter a value before adding.');
 		input.focus();
 	}
+};
+
+button.addEventListener('click', () => {
+    addItem();
+  })
+
+// Additional feature: creating li element when pressing Enter key.
+input.addEventListener('keydown', (event) => {
+    if (event.keyCode === 13) { 
+        addItem();
+    }
 });
