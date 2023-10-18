@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,800;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
 :root {
     --primary-color: #414250;
@@ -105,11 +106,43 @@ nav ul a {
 
 main {
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem;
+    margin: 0 auto 1rem;
+    padding: 1.3rem;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.3rem;
+}
+
+.hero {
+    position: relative;
+    grid-column: 1/2;
+}
+
+.hero picture {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--accent-color-1);
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+    font-family: Parisienne, Arial, Helvetica, sans-serif;
+	font-size: .9rem;
+    font-weight: 600;
 }
 
 h2 {
