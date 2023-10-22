@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Montserrat:wght@400;500;700&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+body {
+    background-color: #ebebeb;
+    color: #2c2c2b;
+    font-family: "Assistant", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 15px 100px;
+    padding: 0;
+}
+header {
+    background-color: #617860;
+    display: grid;
+    grid-template-columns: 150px auto;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+    -moz-box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+    box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+}
+
+header .logo-title-wrapper {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .h4-subtitle {
+    margin-top: -5px;
+    font-size: 0.7em;
+}
+
+.logo {
+    max-width: 40px;
+    margin: 18px 10px;
+}
+
+#logo_link {
+    display: flex;
+    align-items: center;
+    font-size: 0.5em;
+}
+
+h4 {
+    margin: 0; /* Убирает внешние отступы у заголовка */
+    font-weight: bold; /* Жирный шрифт для заголовка "Zelenograd" */
+    white-space: nowrap;
+}
+
+h4 span {
+    font-weight: normal; /* Обычный шрифт для подзаголовка "Chamber of Commerce" */
+}
+
+header a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #ebebeb;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #ab6136;
+    color: white;
+}
+
+#hero-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#hero {
+    position: relative;
+    margin: 0 50px;
+}
+
+#hero-msg {
+    position: absolute;
+    bottom: 110px;
+    left: 70px;
+}
+
+h1 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 2em;
+    /* width: 600px; */
+    line-height: 1.2em;
+}
+
+.join {
+    background-color: #617860;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+    -moz-box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+    box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+}
+
+.join:hover {
+    background-color: #ab6136;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin: 30px 50px;
+
+}
+
+.event-card,
+.weather-card {
+    background-color: #bec5be;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+    -moz-box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+    box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+}
+
+.spotlights {
+    background-color: #bec5be;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/3;
+    border-radius: 5px;
+    padding: 0 25px;
+}
+
+.spotlights h3 {
+    grid-row: 1/2;
+}
+
+.spotlight-card {
+    background-color: #fff;
+    margin: 90px 30px;
+    padding: 30px;
+    grid-row: 2/3;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+    -moz-box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+    box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+}
+
+footer {
+    background-color: #617860;
+    color: #fff;
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+    -moz-box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+    box-shadow: 0px 5px 18px -4px rgba(26, 30, 29, 0.65);
+}
+
