@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Moul&family=Poppins:wght@400;800&display=swap');
+
+body {
+    background-color: #dce7ed;
+    color: #414250;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    animation: fade 15s;
+}
+
+footer {
+    background-color: #414250;
+    color: #dce7ed;
+    padding: 25px 50px;
+    margin-top: 50px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
