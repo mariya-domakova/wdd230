@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="favicon.ico">
+
+    <style>
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,30 +37,7 @@
     </nav>
     <main>
         <h2>HTML Form Build</h2>
-        <form method="get" action="record.html">
-            <label class="top">Username* <input type="text" id="username" name="username" placeholder="my_username" required></label>
-            <label class="top">Password* <input type="password" id="password" name="password" placeholder="at least 8 characters and only alpha-numeric" required pattern="^(?=.*\d)(?=.*[a-zA-Z]).{8,}$"></label>
-            <label class="top">Password repeated for confirmation* <input type="password" id="password2" name="password2" required></label>
-            <div id="formmessage"></div>
-            <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@byui.edu" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
-            <label class="top">Page Rating</label>
-            <div id="rangevalue">1</div> 
-            
-            <input type="range" id="range" name="range" min="1" max="10" step="1" list="rangevalues">
-            <datalist id="rangevalues">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </datalist>
-            <input type="submit" value="Register" class="submitBtn">
-        </form>
+        <p>Thank you! Your form has been successfully submitted.</p>
     </main>
     <footer>
         <p>©<span id="year"></span> | Mariya Domakova | Russia <img alt="Russian flag" src="images/russia.webp"></p>

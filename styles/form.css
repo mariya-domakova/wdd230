@@ -4,9 +4,11 @@
 :root {
     --primary-color: #414250;
     --secondary-color: #dce7ed;
+    --placeholder-color: #bdc3c7;
     --accent-color-1: #5a7587;
     --accent-color-2: #fff;
     --font-size: 1rem;
+    --border-radius: .7rem;
 }
 
 * {
@@ -24,7 +26,7 @@ body {
     margin: auto;
     padding: 0;
     text-align: center;
-    min-width: 380px;
+    min-height: 100%;
 }
 
 header {
@@ -109,33 +111,39 @@ nav ul a {
 
 main {
     padding: 1.3rem;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+main p {
     margin-top: 1rem;
 }
 
 form {
-    margin: 1rem auto;
     background-color: var(--accent-color-2);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
+    margin-top: 1rem; 
+    padding: 1rem;
+    display: flex;
+	flex-direction: column;
+    text-align: left;
     font-size: var(--font-size);
-    padding: 1rem 2%;
-    width: 100%;
-    max-width: 30rem;
 }
 
 form label.top {
-    width: 100%;
-    display: block;
-    text-align: left;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
 form label.top input {
-    display: block;
+    display: flex;
+	flex-direction: column;
+    width: 93%;
     padding: .75rem;
-    width: 94%;
-    align-items: center;
-    
     font-size: var(--font-size);
+}
+
+form label.top input::placeholder {
+    color: var(--placeholder-color);
 }
 
 #rangevalue {
@@ -145,17 +153,18 @@ form label.top input {
 
 #rangevalues {
     display: flex;
-	width: 100%;
+    width: 108%;
 }
 
-form input#rating {
+form input#range {
     accent-color: var(--accent-color-1);
     width: 100%;
+    margin: 1px auto;
 }
 
 #rangevalues option {
 	flex: 1 1 auto;
-
+    margin-left: 6px;
 }
 
 form input.submitBtn {
@@ -163,12 +172,11 @@ form input.submitBtn {
     background-color: var(--primary-color);
     color: var(--accent-color-2);
     font-size: 1.2rem;
-    border-radius: .7rem;
+    border-radius: var(--border-radius);
     padding: 1rem .2rem;
-    margin: 2rem ;
-    width: 50%;
-    max-width: 20rem;
-}
+    margin: 2rem auto;
+    width: 100%;
+}  
 
 form input.submitBtn:hover {
     background-color: var(--accent-color-1);
@@ -239,6 +247,18 @@ footer img {
         display: block;
         padding: 1.5rem 1rem;
 	}
+
+    form {
+        padding: 1rem 3rem;
+    }
+
+    form label.top input {
+        width: 95%;
+    }
+
+    form input.submitBtn {
+        width: 50%;
+    } 
 }
 
 /* Desktop Views ****************************/
