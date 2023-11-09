@@ -1,0 +1,23 @@
+{
+    "familyName": "Johnson",
+    "MoveInDate": "21.02.2017",
+    "NumberOfPeople": 3,
+    "VisitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "John Johnson",
+            "gender": "male",
+            "birthdate": "04.07.1991"
+        },
+        {
+            "name": "Jennifer Johnson",
+            "gender": "female",
+            "birthdate": "26.10.1993"
+        },
+        {
+            "name": "Alice Johnson",
+            "gender": "female",
+            "birthdate": "01.01.2014"
+        }
+    ]
+}
