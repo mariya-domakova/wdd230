@@ -20,9 +20,7 @@ const displayLinks = (weeks) => {
             listTag.innerText = `${link.title}`;
             listItem.appendChild(listTag);
             if (link != innerLinks.at(-1)) {
-                const separator = document.createTextNode(" | ");
-                separator.style.fontWeight = "thin";
-                listItem.appendChild(separator);
+                listItem.appendChild(document.createTextNode(" | "));
             }
         })
         linksList.appendChild(listItem);
