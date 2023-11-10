@@ -175,6 +175,10 @@ h2 {
     font-weight: bold;
 }
 
+.card ul li span {
+    font-weight: lighter;
+}
+
 .card ul li:hover {
     background-color: var(--secondary-color);
 }
