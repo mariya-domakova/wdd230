@@ -1,0 +1,100 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 15px;
+    }
+
+    header {
+        padding: 0 35px;
+        height: 100px;
+    }
+
+    header a {
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #menu-btn {
+		display: none;
+	}
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: static;
+    }
+
+    nav a {
+        padding: 20px;
+    }
+    
+    nav a:hover {
+        background-color: #ab6136;
+        color: white;
+    }
+
+    #hero {
+        position: relative;
+        margin: 10px 35px;
+        align-items: left;
+    }
+
+    .home-title {
+        display: flex;
+    }
+
+    #hero-msg {
+        position: absolute;
+        bottom: 80px;
+        left: 40px;
+        transform: none;
+    }
+
+    .join {
+        background-color: var(--primary-color);
+        padding: 10px 25px;
+        font-size: .9rem;
+    }
+
+    .home-grid {
+        display: grid;
+        margin: 15px 35px;
+        font-size: 1rem;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
+
+    .event-card {
+        padding: 20px;
+        grid-column: 1/2;
+    }
+
+    .weather-card {
+        padding: 20px;
+        grid-column: 2/3;
+    }
+
+    .spotlights {
+        padding: 0;
+        grid-column: 1/3;
+    }
+
+    .spotlights h3 {
+        display: none;
+    }
+
+    .spotlight-card {
+        margin: 30px 50px;
+        padding: 20px;
+    }
+
+    footer {
+        padding: 25px 50px;
+        margin-top: 30px;
+        font-size: 1.1rem;
+    }
+}

@@ -22,24 +22,26 @@
 </head>
 <body>
     <header>
-        <a id="logo-link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Logo">
-            <h4 class="logo-title-wrapper">
+        <div id="logo-container">
+            <img class="logo" src="images/logo.webp" alt="Logo">
+            <a class="logo-title-wrapper" href="index.html">
                 Zelenograd
-                <span class="h4-subtitle">Chamber of Commerce</span>
-            </h4>
-        </a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Discover</a>
-            <a href="#">Directory</a>
-            <a href="#">Join</a>
-        </nav>
+                <span class="subtitle">Chamber of Commerce</span>
+            </a>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Discover</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+            </nav>
+            <a id="menu-btn" href="#">≡</a>
+        </div>
     </header>
     <div id="hero">
         <div id="hero-box">
-            <img id="hero-img" src="images/hero-cropped.jpg" alt="Zelenograd view">
-            <div class="gradient-overlay"></div>
+            <img id="hero-img" src="images/hero-cropped.webp" alt="Zelenograd view">
         </div>
         <section id="hero-msg">
             <h1 class="home-title">Become a member of our<br> community</h1>
@@ -58,20 +60,20 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
         </section>
         <section class="spotlights">
-            <!-- <h3>Member Spotlights</h3> -->
+            <h3>Member Spotlights</h3>
            <div class="spotlight-card">
                 <!-- <img src="#" alt=""> -->
-                <h3>Sed ut perspiciatis</h3>
+                <h4>Sed ut perspiciatis</h3>
                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
            </div>
            <div class="spotlight-card">
                 <!-- <img src="#" alt=""> -->
-                <h3>Sed ut perspiciatis</h3>
+                <h4>Sed ut perspiciatis</h3>
                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
             </div>
             <div class="spotlight-card">
                 <!-- <img src="#" alt=""> -->
-                <h3>Sed ut perspiciatis</h3>
+                <h4>Sed ut perspiciatis</h3>
                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
            </div>
         </section>
@@ -79,6 +81,7 @@
     <footer>
         <p>©<span id="year"></span> Zelenograd Chamber | Mariya Domakova | WDD 230 Project | <span id="lastModified"></span>
     </footer>
-    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsivemenu.js"></script>
 </body>
 </html>
