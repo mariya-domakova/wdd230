@@ -16,12 +16,6 @@
         font-size: 0.7em;
     }
     
-    h4 {
-        margin: 0;
-        font-weight: bold; 
-        white-space: nowrap;
-    }
-    
     h4 span {
         font-weight: normal; 
     }
