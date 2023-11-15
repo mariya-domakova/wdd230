@@ -354,9 +354,7 @@ body.dark {
     box-shadow: var(--shadow-dark);
 }
 
-.dark .event-card p,
-.dark .weather-card p,
-.dark .spotlights p {
+.dark p {
     color: var(--accent3-color-dark);
 }
 
@@ -396,21 +394,16 @@ body.dark {
 }
 
 figure {
+    margin: 0;
     max-width: 100%;
     margin-bottom: 20px;
-}
-
-.discover img {
-    max-width: 100%;
-    height: auto;
-    box-shadow: var(--shadow);
 }
 
 .welcome-card,
 .about-card,
 .demographics-card {
     background-color: var(--secondary-color);
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 30px;
     border-radius: 5px;
     box-shadow: var(--shadow);
@@ -428,6 +421,38 @@ figure {
     height: auto;
 }
 
+.discover figure img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: var(--shadow);
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.discover figure img:hover {
+    opacity: .7;
+}
+
 figcaption {
     text-align: center;
+}
+
+.dark .welcome-card,
+.dark .about-card,
+.dark .demographics-card {
+    background-color: var(--secondary-color-dark);
+    box-shadow: var(--shadow-dark);
+}
+
+.dark figcaption {
+    color: var(--accent3-color-dark);
+}
+
+.dark .discover h1 {
+    color: var(--accent3-color-dark);
+}
+
+.dark .discover figure img {
+    box-shadow: var(--shadow-dark);
 }
