@@ -142,8 +142,6 @@ header a {
   }
   
 
-
-
 .navigation {
     position: relative;
 }
@@ -305,7 +303,7 @@ footer {
     text-align: center;
     padding: 25px;
     margin-top: 20px;
-    font-size: .7rem;
+    font-size: .8rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -376,7 +374,6 @@ body.dark {
 .discover-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
     margin: 15px;
     margin-top: 40px;
     font-size: smaller;
@@ -385,12 +382,17 @@ body.dark {
 .discover-grid h1 {
     text-align: center;
     margin-top: 0;
-    font-size: 2.5rem;
+    font-size: 2em;
     color: var(--primary-color);
+}
+
+.sidebar {
+    grid-column: 1/2;
 }
 
 .discover {
     align-items: center;
+    grid-column: 1/2;
 }
 
 figure {
@@ -425,13 +427,6 @@ figure {
     max-width: 100%;
     height: auto;
     box-shadow: var(--shadow);
-    opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.discover figure img:hover {
-    opacity: .7;
 }
 
 figcaption {

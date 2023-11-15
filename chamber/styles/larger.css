@@ -114,18 +114,3 @@
         box-shadow: var(--shadow);
     }
 }
-
-
-/**************** Discover Page ****************/
-.discover-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.sidebar {
-    grid-column: 1/2;
-}
-
-.discover {
-    grid-column: 2/3;
-}
