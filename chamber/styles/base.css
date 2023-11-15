@@ -45,10 +45,6 @@ header {
     box-shadow: var(--shadow);
 }
 
-.dark header, .dark footer {
-    background-color: #3c423b;
-}
-
 #logo-container {
     display: flex;
     align-items: center;
@@ -371,4 +367,67 @@ body.dark {
 
 .dark .spotlight-card {
     background-color: var(--accent1-color-dark);
+}
+
+.dark header, .dark footer {
+    background-color: #3c423b;
+}
+
+
+/**************** Discover Page ****************/
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin: 15px;
+    margin-top: 40px;
+    font-size: smaller;
+}
+
+.discover-grid h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.discover {
+    align-items: center;
+}
+
+figure {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.discover img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: var(--shadow);
+}
+
+.welcome-card,
+.about-card,
+.demographics-card {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+.welcome-card h3,
+.about-card h3,
+.demographics-card h3 {
+    margin: 0 auto;
+}
+
+.demographics-card img {
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
 }
