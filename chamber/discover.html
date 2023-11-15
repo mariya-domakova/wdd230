@@ -44,10 +44,11 @@
         </div>
     </header>
     <main class="discover-grid">
+        <h1 class="h1-mobile">Discover Zelenograd</h1>
         <section class="sidebar">
             <div class="welcome-card">
                 <h3>Visit information</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p id="visits"></p>
             </div>
             <div class="about-card">
                 <h3>About Zelenograd</h3>
@@ -62,34 +63,41 @@
                 <img src="images/demographics.webp" alt="Demographic statistics of Zelenograd" loading="lazy" width="800" height="400">
                 <p>According to statistics for 2023, Zelenograd has a population of 262,505.</p>
             </div>
-            <!-- <div class="calendar-card">
-                <iframe src="https://calendar.yandex.ru/embed/month?&layer_ids=26443962&tz_id=Europe/Moscow&layer_names=Calendar" width="400" height="300" frameborder="0" style="border: 1px solid #eee"></iframe>
-            </div> -->
+            <div class="districts-card">
+                <h3>Districts</h3>
+                <ul>
+                    <li><span>Matushkino:</span> 1st, 2nd, and 4th microdistricts, North Industrial Zone</li>
+                    <li><span>Savyolki:</span> 3rd, 5th, 6th and 7th microdistricts, East Utility Zone, Nazar'evo village</li>
+                    <li><span>Staroye Kryukovo:</span> 8th and 9th microdistricts, South Industrial Zone, north part of Malino settlement</li>
+                    <li><span>Silino:</span> 10th, 11th, and 12th microdistricts, West and Alabushevo Industrial Zones</li>
+                    <li><span>Kryukovo:</span> 14th-23rd microdistricts, Andreevka Utility Zone, Malino Industrial Zone, south part of Malino settlement, Kamenka, Kutuzovo, Novo-Malino, and Rozhki villages</li>
+                </ul>
+            </div>
         </section>
         <section class="discover">
-            <h1>Discover Zelenograd</h1>
+            <h1 class="h1-desktop">Discover Zelenograd</h1>
             <figure>
-                <img src="images/img1.webp" alt="MIET" loading="lazy" width="1000" height="500">
+                <img src="images/img1.webp" alt="MIET" loading="lazy" width="1200" height="600">
                 <figcaption>National Research University of Electronic Technology (MIET)</figcaption>
             </figure>
             <figure>
-                <img src="images/img2.webp" alt="local skate park" loading="lazy" width="1000" height="500">
+                <img src="images/img2.webp" alt="local skate park" loading="lazy" width="1200" height="600">
                 <figcaption>A new professional-level skate park has become a focal point of attraction</figcaption>
             </figure>
             <figure>
-                <img src="images/img3.webp" alt="The Park of Victory" loading="lazy" width="1000" height="500">
+                <img src="images/img3.webp" alt="The Park of Victory" loading="lazy" width="1200" height="600">
                 <figcaption>Cascade of fountains in the Park of Victory</figcaption>
             </figure>
             <figure>
-                <img src="images/img4.webp" alt="The Shtyki memorial" loading="lazy" width="1000" height="500">
+                <img src="images/img4.webp" alt="The Shtyki memorial" loading="lazy" width="1200" height="600">
                 <figcaption>The Shtyki (Bayonets) - memorial complex erected in honor of the fallen soldiers who defended Moscow in 1941</figcaption>
             </figure>
             <figure>
-                <img src="images/img5.webp" alt="Mikhailovsky Pond" loading="lazy" width="1000" height="500">
+                <img src="images/img5.webp" alt="Mikhailovsky Pond" loading="lazy" width="1200" height="600">
                 <figcaption>Mikhailovsky Pond</figcaption>
             </figure>
             <figure>
-                <img src="images/img6.webp" alt="Flute House" loading="lazy" width="1000" height="500">
+                <img src="images/img6.webp" alt="Flute House" loading="lazy" width="1200" height="600">
                 <figcaption>Flute House - the longest building in Zelenograd</figcaption>
             </figure>
         </section>        
@@ -100,5 +108,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 </html>

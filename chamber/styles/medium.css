@@ -104,6 +104,14 @@
         gap: 3rem;
     }
 
+    .h1-mobile {
+        display: none;
+    }
+
+    .h1-desktop {
+        display: block;
+    }
+
     .sidebar {
         grid-column: 1/2;
     }

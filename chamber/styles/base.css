@@ -256,9 +256,7 @@ h1 {
     box-shadow: var(--shadow);
 }
 
-.event-card h3,
-.weather-card h3,
-.spotlights h3 {
+h3 {
     margin: 0 auto;
 }
 
@@ -386,6 +384,10 @@ body.dark {
     color: var(--primary-color);
 }
 
+.h1-desktop {
+    display: none;
+}
+
 .sidebar {
     grid-column: 1/2;
 }
@@ -403,7 +405,8 @@ figure {
 
 .welcome-card,
 .about-card,
-.demographics-card {
+.demographics-card,
+.districts-card {
     background-color: var(--secondary-color);
     padding: 20px;
     margin-bottom: 30px;
@@ -411,16 +414,14 @@ figure {
     box-shadow: var(--shadow);
 }
 
-.welcome-card h3,
-.about-card h3,
-.demographics-card h3 {
-    margin: 0 auto;
-}
-
 .demographics-card img {
     margin-top: 15px;
     max-width: 100%;
     height: auto;
+}
+
+.districts-card span {
+    font-weight: bold;
 }
 
 .discover figure img {
@@ -435,7 +436,8 @@ figcaption {
 
 .dark .welcome-card,
 .dark .about-card,
-.dark .demographics-card {
+.dark .demographics-card,
+.dark .districts-card {
     background-color: var(--secondary-color-dark);
     box-shadow: var(--shadow-dark);
 }
@@ -444,7 +446,8 @@ figcaption {
     color: var(--accent3-color-dark);
 }
 
-.dark .discover h1 {
+.dark .h1-mobile,
+.dark .h1-desktop {
     color: var(--accent3-color-dark);
 }
 
