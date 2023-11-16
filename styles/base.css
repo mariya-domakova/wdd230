@@ -200,7 +200,14 @@ h2 {
     padding: .5rem 0;
 }
 
+#weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 main iframe {
+    border: 0;
     width: 100%;
     grid-column: 1/2;
 }
