@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelenograd Chamber of Commerce | Join</title>
+    <meta name="description" content="Zelenograd Chamber of Commerce Join Page - WDD 230 - Mariya Domakova">
+    <meta name="author" content="Mariya Domakova">
+
+    <!-- Open Graph meta tags for Facebook -->
+    <meta property="og:title" content="Zelenograd Chamber of Commerce | Join">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Welcome to Zelenograd Chamber of Commerce">
+    <meta property="og:image" content="https://prorus.ru/_/manager/files/5fb/e1edcc02a3/%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F%20%D0%BD%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B5%202.jpg">
+    <meta property="og:url" content="https://mariya-domakova.github.io/wdd230/chamber/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img class="logo" src="images/logo.webp" alt="Logo">
+            <a class="logo-title-wrapper" href="index.html">
+                Zelenograd
+                <span class="subtitle">Chamber of Commerce</span>
+            </a>
+        </div>
+        <div class="navigation">
+            <nav>
+                <label class="switch">
+                    <input type="checkbox" id="dark">
+                    <span class="slider round"></span>
+                </label>
+                <a href="https://mariya-domakova.github.io/wdd230/chamber/">Home</a>
+                <a href="https://mariya-domakova.github.io/wdd230/chamber/discover.html">Discover</a>
+                <a href="#">Directory</a>
+                <a href="https://mariya-domakova.github.io/wdd230/chamber/join.html">Join</a>
+            </nav>
+            <a id="menu-btn" href="#">≡</a>
+        </div>
+    </header>
+    <main class="join-grid">
+        <h1>Join the Chamber</h1>
+        <section class="form">
+            <form method="get" action="thankyou.html">
+                <label class="top">First name* <input type="text" id="fname" name="fname" placeholder="" required></label>
+                <label class="top">Last name* <input type="text" id="lname" name="lname" placeholder="" required></label>
+                <label class="top">Title or position* <input type="text" id="title" name="title" placeholder="Use letters, hyphens, and spaces (minimum 7 characters)" required pattern="[a-zA-Z -]{7,}"></label>
+                <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" id="phone" name="phone" required></label>
+                <label class="top">Business/organization's name* <input type="text" id="bname" name="bname" required></label>
+                <div class="top">Membership level</div>
+                <label class="radio"><input type="radio" name="membership" value="np"> NP Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                <label class="top">Business/organization's description<textarea id="description" name="description"></textarea></label>
+                <input type="hidden" value="" name="datetime" id="datetime">
+                <button type="submit" class="submitBtn">Join the Chamber</button>
+            </form>
+        </section>
+        <section class="memberships">
+            <h2>Membership levels</h2>
+            <div class="benefits-container">
+                <div class="memberships-card">
+                    <h3>NP Membership</h3>
+                    <ul>
+                        <li>Ideal for non-profit organizations</li>
+                        <li>No membership fee</li>
+                        <li>Access to community resources</li>
+                    </ul>
+                    <p class="price">Free</p>
+                </div>
+                <div class="memberships-card">
+                    <h3>Bronze Membership</h3>
+                    <ul>
+                        <li>Affordable membership fee</li>
+                        <li>10% event discounts</li>
+                        <li>Networking opportunities</li>
+                    </ul>
+                    <p class="price">$50/year</p>
+                </div>
+                <div class="memberships-card">
+                    <h3>Silver Membership</h3>
+                    <ul>
+                        <li>Enhanced event discounts (15%)</li>
+                        <li>Featured advertising slots</li>
+                        <li>Exclusive training sessions</li>
+                    </ul>
+                    <p class="price">$100/year</p>
+                </div>
+                <div class="memberships-card">
+                    <h3>Gold Membership</h3>
+                    <ul>
+                        <li>Premium event discounts (20%)</li>
+                        <li>Prime advertising placement</li>
+                        <li>VIP access to special events</li>
+                    </ul>
+                    <p class="price">$200/year</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> Zelenograd Chamber | Mariya Domakova | WDD 230 Project | <span id="lastModified"></span>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsivemenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+</body>
+</html>
