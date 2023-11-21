@@ -41,7 +41,7 @@ header {
     grid-template-columns: 2fr 1fr;
     padding: 0 20px;
     height: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
@@ -207,6 +207,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     margin: 0 20px;
+    margin-top: 20px;
 }
 
 #hero-msg {
@@ -354,7 +355,8 @@ body.dark {
     box-shadow: var(--shadow-dark);
 }
 
-.dark p {
+.dark p,
+.dark ul {
     color: var(--accent3-color-dark);
 }
 
@@ -376,8 +378,7 @@ body.dark {
 .discover-grid {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 40px;
-    font-size: smaller;
+    margin-top: 20px;
 }
 
 .discover-grid h1 {
@@ -386,12 +387,14 @@ body.dark {
     margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--primary-color);
-    font-size: 2em;
+    font-size: 1.5em;
     color: var(--primary-color);
 }
 
 .sidebar {
     grid-column: 1/2;
+    margin-bottom: 20px;
+    font-size: .8rem;
 }
 
 .discover {
@@ -411,7 +414,7 @@ figure {
 .districts-card {
     background-color: var(--secondary-color);
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
@@ -434,6 +437,12 @@ figure {
 
 figcaption {
     text-align: center;
+    font-size: .8rem;
+}
+
+.dark .discover-grid h1 {
+    color: var(--accent3-color-dark);
+    border-bottom: 1px solid var(--accent3-color-dark);
 }
 
 .dark .welcome-card,
@@ -444,12 +453,11 @@ figcaption {
     box-shadow: var(--shadow-dark);
 }
 
-.dark figcaption {
-    color: var(--accent3-color-dark);
+.dark .districts-card span {
+    color: var(--accent2-color-dark);
 }
 
-.dark .h1-mobile,
-.dark .h1-desktop {
+.dark figcaption {
     color: var(--accent3-color-dark);
 }
 
@@ -463,7 +471,7 @@ figcaption {
 .join-grid {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .join-grid h1 {
@@ -472,12 +480,13 @@ figcaption {
     margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--primary-color);
-    font-size: 2em;
+    font-size: 1.5em;
     color: var(--primary-color);
 }
 
 .form {
     grid-column: 1/2;
+    margin-bottom: 20px;
 }
 
 .memberships {
@@ -488,7 +497,7 @@ form {
     background-color: var(--secondary-color);
     border-radius: var(--radius);
     max-width: 500px;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     display: flex;
 	flex-direction: column;
     text-align: left;
@@ -505,7 +514,7 @@ form label.top input,
 form label.top textarea {
     display: flex;
 	flex-direction: column;
-    width: 95%;
+    width: 90%;
     padding: .75rem;
     border-radius: var(--radius);
     font-size: var(--font-size);
@@ -543,12 +552,16 @@ form .submitBtn:hover {
     cursor: pointer;
 }
 
+.memberships {
+    font-size: 1rem;
+}
+
 .memberships-card {
     position: relative;
-    background-color: var(--accent1-color);
+    background-color: #fff;
     box-shadow: var(--shadow);
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px;
     border-radius: var(--radius);
 }
 
@@ -558,10 +571,47 @@ form .submitBtn:hover {
     right: 0;
     background-color: var(--primary-color);
     color: var(--accent1-color);
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: bold;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
-    width: 120px;
+    width: 100px;
     text-align: center;
+}
+
+.dark .join-grid h1 {
+    color: var(--accent3-color-dark);
+    border-bottom: 1px solid var(--accent3-color-dark)
+}
+
+.dark form {
+    background-color: var(--secondary-color-dark);
+    box-shadow: var(--shadow-dark);
+}
+
+.dark form label.top input,
+.dark form label.top textarea {
+    color: var(--secondary-color-dark);
+}
+
+.dark form .submitBtn {
+    background-color: var(--accent4-color-dark);
+}
+
+.dark form .submitBtn:hover {
+    background-color: var(--accent1-color-dark);
+}
+
+.dark .memberships-card {
+    background-color: var(--secondary-color-dark);
+    box-shadow: var(--shadow-dark);
+}
+
+.dark form label.top,
+.dark form div.top {
+    color: var(--accent3-color-dark);
+}
+
+.dark .price {
+    background-color: var(--accent4-color-dark);
 }

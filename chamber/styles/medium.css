@@ -7,6 +7,7 @@
     header {
         padding: 0 35px;
         height: 100px;
+        margin-bottom: 20px;
     }
 
     header a {
@@ -41,6 +42,7 @@
         position: relative;
         margin: 10px 30px;
         align-items: left;
+        margin-top: 20px;
     }
 
     .home-title {
@@ -107,18 +109,27 @@
     .discover-grid h1 {
         grid-column: 1/3;
         margin-bottom: 0;
+        font-size: 2em;
+    }
+
+    .sidebar {
+        margin-bottom: 0;
+    }
+
+    .welcome-card,
+    .about-card,
+    .demographics-card,
+    .districts-card {
+        margin-bottom: 30px;
     }
     
     .sidebar {
         grid-column: 1/2;
+        font-size: 1.1rem;
     }
 
     .discover {
         grid-column: 2/3;
-    }
-
-    .discover-grid h1 {
-        font-size: 2.5rem;
     }
 
     .discover figure img {
@@ -131,21 +142,47 @@
         opacity: .7;
     }
 
-    /**************** Discover Page ****************/
+    figcaption {
+        font-size: 1rem;
+    }
+
+    
+
+    /**************** Join Page ****************/
     
     .join-grid h1 {
         grid-column: 1/3;
         margin-bottom: 0;
+        font-size: 2em;
     }
 
     .form {
         display: flex;
         justify-content: center;
+        margin-bottom: 0;
     }
 
     form {
         width: 80%;
         margin-top: 2rem;
+        padding: 1rem 3rem;
     }
 
+    form label.top input,
+    form label.top textarea {
+        width: 95%;
+    }
+
+    .memberships {
+        font-size: 1.2rem;
+    }
+
+    .memberships-card {
+        padding: 20px;
+    }
+
+    .price {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
 }
