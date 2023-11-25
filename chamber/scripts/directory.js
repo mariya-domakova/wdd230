@@ -62,5 +62,13 @@ function showList() {
     cards.classList.remove("grid");
 }
 
-
 getMembersData(membersUrl)
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const h = document.getElementById("hero-msg");
+    h.style.opacity = "0";
+    setTimeout(() => {
+      h.style.opacity = "1";
+    }, 500); 
+  });
