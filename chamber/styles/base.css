@@ -86,63 +86,62 @@ header a {
     width: 50px;
     height: 24px;
     margin-right: 40px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--secondary-color);
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #1f1f1e;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #1f1f1e;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  
+}
 
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: var(--secondary-color);
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 16px;
+width: 16px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #1f1f1e;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #1f1f1e;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+  
 .navigation {
     position: relative;
 }
@@ -314,6 +313,15 @@ footer {
     box-shadow: var(--shadow);
 }
 
+.subpage-heading {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent2-color);
+    font-size: 1.5em;
+    color: var(--accent2-color);
+}
 
 /******* dark mode *******/
 
@@ -373,22 +381,17 @@ body.dark {
     background-color: #3c423b;
 }
 
+.dark .subpage-heading {
+    color: var(--accent3-color-dark);
+    border-bottom: 1px solid var(--accent3-color-dark);
+}
+
 
 /**************** Discover Page ****************/
 .discover-grid {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 20px;
-}
-
-.discover-grid h1 {
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--primary-color);
-    font-size: 1.5em;
-    color: var(--primary-color);
 }
 
 .sidebar {
@@ -440,11 +443,6 @@ figcaption {
     font-size: .8rem;
 }
 
-.dark .discover-grid h1 {
-    color: var(--accent3-color-dark);
-    border-bottom: 1px solid var(--accent3-color-dark);
-}
-
 .dark .welcome-card,
 .dark .about-card,
 .dark .demographics-card,
@@ -463,6 +461,104 @@ figcaption {
 
 .dark .discover figure img {
     box-shadow: var(--shadow-dark);
+}
+
+
+/**************** Directory Page ****************/
+.directory-btn {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.directory-btn button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px 13px;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1.5rem;
+}
+
+.directory-btn button:hover {
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-gap: 20px;
+	align-items: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.grid section h3 {
+    display: none;
+}
+
+.grid section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    padding: 2rem;
+    height: 250px;
+}
+
+.grid section p,
+.grid section a {
+    margin: 10px 0;
+}
+
+.member-card img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+    margin-top: 30px;
+}
+
+.list section {
+	display: block;
+    padding: 30px;
+    align-items: center;
+}
+
+.list section img {
+	display: none;
+}
+
+.list section:nth-child(odd) {
+	background-color: var(--secondary-color);
+}
+
+.dark .directory-btn button {
+    background-color: var(--secondary-color-dark);
+    color: var(--accent3-color-dark);
+    border: none;
+}
+
+.dark .grid section {
+    background-color: var(--secondary-color-dark);
+    box-shadow: var(--shadow-dark);
+}
+
+.dark .list section:nth-child(odd) {
+    background-color: var(--secondary-color-dark);
+}
+
+.dark .grid section a,
+.dark .list section a {
+    color: #ab6136;
 }
 
 
@@ -577,11 +673,6 @@ form .submitBtn:hover {
     margin: 0;
     width: 100px;
     text-align: center;
-}
-
-.dark .join-grid h1 {
-    color: var(--accent3-color-dark);
-    border-bottom: 1px solid var(--accent3-color-dark)
 }
 
 .dark form {

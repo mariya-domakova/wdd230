@@ -119,6 +119,19 @@
         grid-template-columns: 1fr 3fr;
     }
 
+    /**************** Directory Page ****************/
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+
+    .list section h3 {
+        margin-left: 40px;
+        text-align: left;
+    }
+
     /**************** Join Page ****************/
 
     .join-grid {
