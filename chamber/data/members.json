@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Angstrem",
+            "address": "Shokina Square, Building 2, Structure 3, Zelenograd",
+            "phoneNumber": "+7 (499) 720-84-44",
+            "websiteURL": "https://www.angstrem.ru/",
+            "imageFileName": "images/angstrem.png",
+            "membershipLevel": "Gold",
+            "category": "Science and Technology"
+        },
+        {
+            "name": "KDC-24",
+            "address": "Sosnovaya Alleya, 2a, Zelenograd",
+            "phoneNumber": "+7 (499) 322-37-99",
+            "websiteURL": "https://kdc24.ru/",
+            "imageFileName": "images/kdc.png",
+            "membershipLevel": "Gold",
+            "category": "Healthcare"
+        },
+        {
+            "name": "DDX Fitness",
+            "address": "Youth Square, Building 1, Zelenograd",
+            "phoneNumber": "+7 (495) 032-54-53",
+            "websiteURL": "https://www.ddxfitness.ru/",
+            "imageFileName": "images/ddx.png",
+            "membershipLevel": "Silver",
+            "category": "Leisure"
+        },
+        {
+            "name": "Auchan",
+            "address": " Solnechnogorsky District, Andreyevka Village, Zhilinskaya Street, Building 1",
+            "phoneNumber": "+7 (800) 700-58-00",
+            "websiteURL": "https://www.auchan.ru/",
+            "imageFileName": "images/auchan.png",
+            "membershipLevel": "Silver",
+            "category": "Retail Organizations"
+        },
+        {
+            "name": "GWD Engineering",
+            "address": "Elinо, Letnyaya Street, 1, Zelenograd",
+            "phoneNumber": "+7 (800) 333-11-11",
+            "websiteURL": "https://www.gwde.ru/",
+            "imageFileName": "images/gwd.png",
+            "membershipLevel": "Bronze",
+            "category": "Repair and Construction Works"
+        },
+        {
+            "name": "Nika",
+            "address": "Building 322A, Zelenograd",
+            "phoneNumber": "+7 (499) 938-52-42",
+            "websiteURL": "https://fond-nika.ru/",
+            "imageFileName": "images/nika.jpg",
+            "membershipLevel": "NP",
+            "category": "Credit and Financial Organizations"
+        },
+        {
+            "name": "Micron Media",
+            "address": "Central Avenue, Building 455, Zelenograd",
+            "phoneNumber": "+7 (499) 707-91-49",
+            "websiteURL": "http://www.micmedia.ru/",
+            "imageFileName": "images/micronmedia.png",
+            "membershipLevel": "Bronze",
+            "category": "Telecommunication Companies"
+        }
+    ]
+}
