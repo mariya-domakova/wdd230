@@ -33,6 +33,10 @@
         width: 100%;
         border-radius: 5px;
     }
+
+    #banner {
+        margin: 20px 50px;
+    }
     
     #hero {
         position: relative;
@@ -67,6 +71,7 @@
     }
     
     .home-grid {
+        grid-template-columns: 2fr 1fr;
         font-size: 1.2rem;
     }
     

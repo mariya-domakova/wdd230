@@ -38,6 +38,10 @@
         color: white;
     }
 
+    #banner {
+        margin: 20px 30px;
+    }
+
     #hero {
         position: relative;
         margin: 10px 30px;
@@ -65,7 +69,7 @@
         display: grid;
         margin: 15px 35px;
         font-size: 1rem;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 3fr 2fr;
         gap: 30px;
     }
 

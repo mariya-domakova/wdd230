@@ -199,7 +199,7 @@ nav a:hover {
 #banner {
     position: relative;
     background-color: var(--secondary-color);
-    margin: 0 50px 20px;
+    margin: 20px;
     padding: 10px 30px;
 }
 
@@ -290,12 +290,38 @@ h3 {
 }
 
 .event-card p,
-.weather-card p,
 .spotlights p {
     margin: 7px 0;
     font-size: .8em;
 }
 
+/* .weather-card {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+} */
+
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: .5rem;
+}
+
+#forecast p {
+    margin: 0;
+    font-size: .8em;
+}
+
+.weather-details-wrapper {
+    text-align: center;
+    /* border-left: 1px solid var(--primary-color); */
+}
+
+.icon-and-temp {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
 
 .spotlights {
     background-color: var(--secondary-color);
@@ -372,6 +398,14 @@ body.dark {
 
 .dark .navigation.open nav {
     background-color: rgba(54, 59, 48, 0.9);
+}
+
+.dark #banner {
+    background-color: var(--secondary-color-dark);
+}
+
+.dark #banner-btn {
+    color: var(--accent2-color-dark);
 }
 
 .dark #hero {
