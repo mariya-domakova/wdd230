@@ -220,8 +220,13 @@ nav a:hover {
     display: none;
 }
 
-#hero-img {
+#hero-box picture {
     width: 100%;
+}
+
+#hero-box img {
+    width: 100%;
+    height: auto;
     border-radius: var(--radius);
 }
 
