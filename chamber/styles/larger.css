@@ -77,7 +77,6 @@
     .event-card,
     .weather-card {
         background-color: var(--secondary-color);
-        padding: 30px;
         border-radius: 5px;
         box-shadow: var(--shadow);
     }
@@ -88,7 +87,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-column: 1/3;
         border-radius: 5px;
-        padding: 0 25px;
+        padding: 0 20px;
     }
     
     .spotlights h3 {
@@ -98,7 +97,6 @@
     .spotlight-card {
         background-color: #fff;
         margin: 40px 20px;
-        padding: 30px;
         grid-row: 2/3;
         border-radius: 5px;
         box-shadow: var(--shadow);
