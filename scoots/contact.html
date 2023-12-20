@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots | Contact Us</title>
+    <meta name="description" content="Scoots Contact Page - WDD 230 - Mariya Domakova">
+    <meta name="author" content="Mariya Domakova">
+
+    <meta property="og:title" content="Scoots | Homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Scoots | Motor Scooter Rental">
+    <meta property="og:image" content="https://i0.wp.com/justsimplywander.com/wp-content/uploads/2018/07/IMG_8585.jpg?resize=2000%2C1333&ssl=1">
+    <meta property="og:url" content="https://mariya-domakova.github.io/wdd230/scoots/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="images/logo.png" alt="Logo">
+            <a class="logo-title-wrapper" href="index.html">Scoots</a>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="https://mariya-domakova.github.io/wdd230/chamber/">Home</a>
+                <a href="https://mariya-domakova.github.io/wdd230/chamber/rentals.html">Rentals</a>
+                <a href="https://mariya-domakova.github.io/wdd230/chamber/reservations.html">Reservations</a>
+                <a href="https://mariya-domakova.github.io/wdd230/chamber/contact.html"> Contact</a>
+            </nav>
+            <a id="menu-btn" href="#">≡</a>
+        </div>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <section id="contact-info" class="card">
+            <p>E-mail: info@scoots.mx</p>
+            <p>Phone: +1 XXX-XXX-XXXX</p>
+            <p>Office 1: Av Benito Juárez 239, Centro, Playa del Carmen, Mexico</p>
+            <p>Office 2: Costera Sur 1, Cozumel, Mexico</p>
+        </section>
+        <section id="contact-form">
+            <form method="get" action="thankyou.html">
+                <label class="top">Name <input type="text" id="name" name="name" placeholder="" required></label>
+                <label class="top">Email <input type="email" id="email" name="email" placeholder=""></label>
+                <label class="top">Comment<textarea id="comment" name="comment"></textarea></label>
+                <button type="submit" class="submitBtn">Contact us</button>
+            </form>
+        </section>
+        <section id="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2093.063844606064!2d-86.97737760663601!3d20.475957143697364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sru!2sru!4v1703091535394!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>©<span id="year"></span> Scoots | Mariya Domakova | WDD 230 Project | <span id="lastModified"></span>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/responsivemenu.js"></script>
+</body>
+</html>
