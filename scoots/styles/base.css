@@ -106,7 +106,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ab6136;
+    background-color: var(--text-color);
     color: white;
 }
 
@@ -244,8 +244,6 @@ footer {
 
 /****** Contact Us ******/
 
-#contact-info {
-}
 
 form {
     background-color: var(--primary-color);
